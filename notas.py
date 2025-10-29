@@ -32,6 +32,8 @@ for nombre, nota in alumnos.items():
 
 print(f'La nota media es {mostrar_nota_media(alumnos):.2f}')
 
+print(f'Esta es la gran, super, hiper, mega aportación de Óscar al proyecto')
+
 # def main():
 
 #     continuar = True
