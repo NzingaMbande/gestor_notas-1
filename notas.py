@@ -1,14 +1,15 @@
-import os
-import time
-from tabulate import tabulate
+# import os
+# import time
+# from tabulate import tabulate
 
-os.system('cls' if os.name == 'nt' else 'clear')
 
 alumnos = {
-        'pepe', 10.0,
-        'paolo', 4.0,
-        'aria', 3.5
+    'Juan': 8.5,
+    'María': 9.2,
+    'Pedro': 7.8,
+    'Ana': 6.9
 }
+
 
 
 # lista_alumnos = [
@@ -24,9 +25,10 @@ alumnos = {
 def mostrar_nota_media(diccionario):
     return sum(diccionario.values()) / len(diccionario)
 
-print('Listado de alumnos y notas')
+# Imprimimos el listado de alumnos y sus notas
+print('Listado de alumnos y notas:')
 for nombre, nota in alumnos.items():
-        print(f'{nombre} {nota}')
+    print(f'{nombre} {nota}')
 
 print(f'La nota media es {mostrar_nota_media(alumnos):.2f}')
 
